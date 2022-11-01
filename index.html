@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아시아나항공</title>
+    <!-- 1.초기화 -->
+    <link href="./css/reset.css" rel="stylesheet" type="text/css">
+
+    <!-- 2.기본 -->
+    <link rel="stylesheet" href="./css/base.css" type="text/css">
+   <!-- 푸터 헤더  -->
+    <link rel="stylesheet" href="./css/layout.css" type="text/css">
+    <!-- 메인 콘텐츠 -->
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+
+    <link rel="stylesheet" href="./css/swiper.css" type="text/css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <script src="./js/swiper.js"></script>
+   <!-- 부드러운 애니메이션 스크립트 -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js" ></script>
+
+    <script src="./js/main.js" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+  <link rel="shortcut icon" href="./images/icon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css" type="text/css">
+/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+    <!-- 헤더영역 -->
+    <header>
+        <div class="header_inner">
+            <h1>
+                <a href="#" title="메인페이지로 바로가기"><img src="./images/logo_header.png" alt="메인로고"></a>
+            </h1>
+
+            <nav class="sub_mnu">
+                <ul>
+                    <li><a href="javascript:void(0);" title="로그인">로그인</a></li>
+                    <li><a href="javascript:void(0);" title="이벤트">이벤트</a></li>
+                    <li><a href="javascript:void(0);" title="고객서비스">고객서비스</a></li>
+                    <li><a href="javascript:void(0);" title="국가 선택">국가 선택</a></li>
+                </ul>
+
+                <div class="search">
+                    <input type="search" placeholder="검색어 입력" id="search">
+                    <label for="search">
+                    <span class="material-icons">
+                        search
+                        </span>
+                    </label>
+                </div>
+            </nav>
+            <div class="gnb">
+                <ul>
+                    <li><a href="javascript:void(0);" title="예약">예약</a>
+                        <div class="item_con">
+                            <div class="sub_wrap">
+
+                                <dl class="sub">
+                                    <dt> <a href="javascript:void(0);"> 항공권 예약</a></dt>
+                                    <dd> <a href="javascript:void(0);"> 항공원 예약</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 최저가 간편조회</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 오즈드림페어</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 신용카드 혜택</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 예약 안내</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 운임안내</a></dd>
+                                </dl>
+                                
+                                <dl class="sub">
+                                    <dt> <a href="javascript:void(0);"> 예약 조회</a></dt>
+                                    <dd> <a href="javascript:void(0);"> 예약 내역</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 항공원 구매 내역</a></dd>
+                                </dl>
+
+                                <dl class="sub">
+                                    <dt> <a href="javascript:void(0);"> 체크인 하기</a></dt>
+                                </dl>
+
+                                <dl class="sub">
+                                    <dt> <a href="javascript:void(0);">운항정보</a></dt>
+                                    <dd> <a href="javascript:void(0);"> 스케줄 조회</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 출도착 조회</a></dd>
+                                </dl>
+
+                                <dl class="sub">
+                                    <dt> <a href="javascript:void(0);"> 취향지정보</a></dt>
+                                    <dd> <a href="javascript:void(0);"> 운항 노선</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 여행 정보</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 캐빈승무원 여행일기</a></dd>
+                                </dl>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><a href="javascript:void(0);" title="여행 준비">여행 준비</a>
+                        <div class="item_con">
+                            <div class="sub_wrap">
+
+                                <dl class="sub">
+                                    <dt> <a href="javascript:void(0);"> 체크인 안내</a></dt>
+                                    <dd> <a href="javascript:void(0);"> 사전 체크인</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 공항 체크인</a></dd>
+                                </dl>
+                                
+                                <dl class="sub">
+                                    <dt> <a href="javascript:void(0);"> 사전 좌석 배정</a></dt>
+                                </dl>
+
+                                <dl class="sub">
+                                    <dt> <a href="javascript:void(0);"> 수하물</a></dt>
+                                    <dd> <a href="javascript:void(0);"> 이용 안내</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 위탁 수하물</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 휴대 수하물</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 수하물 계산기</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 운송제한 물품</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 수하물 보상</a></dd>
+                                </dl>
+
+                                <dl class="sub">
+                                    <dt> <a href="javascript:void(0);">도움이 필요한 고객</a></dt>
+                                    <dd> <a href="javascript:void(0);"> 장애인 고객</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 고령자 고객</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 임신부 고객</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 유/소아 동반 고객</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 혼자 여행하는 어린이/청소년</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 반려동물 동반</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 의료도움이 필요한 고객</a></dd>
+                                </dl>
+
+                                <dl class="sub">
+                                    <dt> <a href="javascript:void(0);"> 출입국 신고서</a></dt>
+                                    <dd> <a href="javascript:void(0);"> 출입국 신고서</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 미국 입출국 기록(I-94)전자열람</a></dd>
+                                </dl>
+
+                                <dl class="sub">
+                                    <dt> <a href="javascript:void(0);"> 코로나19 종합안내</a></dt>
+                                </dl>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><a href="javascript:void(0);" title="여행 준비">여행 준비</a>
+                        <div class="item_con">
+                            <div class="sub_wrap">
+
+                                <dl class="sub">
+                                    <dt> <a href="javascript:void(0);"> 공항에서</a></dt>
+                                    <dd> <a href="javascript:void(0);"> 공항 안내</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 탑승수속 절차</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 라운지 이용</a></dd>
+                                </dl>
+                                
+                                <dl class="sub">
+                                    <dt> <a href="javascript:void(0);"> 기내에서</a></dt>
+                                    <dd> <a href="javascript:void(0);"> 클래스별안내</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 기내식/음료</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 기내서비스순서</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 기내특별서비스</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 기내유실물조회</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 기내 엔터테인먼트</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 기내지</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 국제선 기내면세품</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 기내건강</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 휴대용전자기기 사용안내	</a></dd>
+                                </dl>
+
+                                <dl class="sub">
+                                    <dt> <a href="javascript:void(0);"> 항공기 정보</a></dt>
+                                    <dd> <a href="javascript:void(0);"> A380-800</a></dd>
+                                    <dd> <a href="javascript:void(0);"> B747-400</a></dd>
+                                    <dd> <a href="javascript:void(0);"> A350-900</a></dd>
+                                    <dd> <a href="javascript:void(0);"> B777-200ER</a></dd>
+                                    <dd> <a href="javascript:void(0);"> A330-300</a></dd>
+                                    <dd> <a href="javascript:void(0);"> B767-300</a></dd>
+                                    <dd> <a href="javascript:void(0);"> A321-neo</a></dd>
+                                    <dd> <a href="javascript:void(0);"> A321-200</a></dd>
+                                    <dd> <a href="javascript:void(0);"> A320-200</a></dd>
+                                </dl>
+
+                                <dl class="sub">
+                                    <dt> <a href="javascript:void(0);">유료 부가서비스</a></dt>
+                                    <dd> <a href="javascript:void(0);"> 레그룸 좌석</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 프론트 존</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 듀오 좌석</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 이코노미 스마티움</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 로얄 비즈니스</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 업그레이드 스탠바이</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 기내 Wi-Fi</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 도움이 필요한 고객</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 수하물 사전 구매</a></dd>
+                                </dl>
+
+                                <dl class="sub">
+                                    <dt> <a href="javascript:void(0);"> 매직보딩패스</a></dt>
+                                    <dd> <a href="javascript:void(0);"><img src="./images/bordingpass.jpeg" alt=""></a></dd>
+                                </dl>
+
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li><a href="javascript:void(0);" title="아시아나클럽">아시아나클럽</a>
+                        <div class="item_con">
+                            <div class="sub_wrap">
+
+                                <dl class="sub">
+                                    <dt> <a href="javascript:void(0);"> 회원제도</a></dt>
+                                    <dd> <a href="javascript:void(0);"> 회원안내</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 특별 프로그램</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 할인제휴사</a></dd>
+                                </dl>
+                                
+                                <dl class="sub">
+                                    <dt> <a href="javascript:void(0);"> 마일리지적립</a></dt>
+                                    <dd> <a href="javascript:void(0);"> 아시아나항공</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 스타얼라이언스/제휴항공사</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 마일리지 적립몰</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 금융(신용카드,환전)</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 쇼핑</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 여행(호텔,렌터카,여행자보험)</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 라이프(통신,보험)</a></dd>
+                                    <dd> <a href="javascript:void(0);"> 누락마일리지적립</a></dd>
+                                </dl>
+
+                                <dl class="sub">
+                                    <dt> <a href="javascript:void(0);">마일리지사용</a></dt>
+                                    <dd> <a href="javascript:void(0);">아시아나항공</a></dd>
+                                    <dd> <a href="javascript:void(0);">스타얼라이언스/제휴항공사</a></dd>
+                                    <dd> <a href="javascript:void(0);">마일리지사용몰</a></dd>
+                                </dl>
+
+                                <dl class="sub">
+                                    <dd> <a href="javascript:void(0);"><img src="./images/asiana_club'.jpeg" alt=""></a></dd>
+                                </dl>
+
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- 메인영역 -->
+    <main>
+        <section class="slide">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide_img"><a href="#" title="메인슬라이드"><img src="./images/main-slide1.jpeg" alt=""> <img src="./images/slide-txt1.png" alt="" class="slide_txt"></a></div>
+              <div class="swiper-slide slide_img"><a href="#" title="메인슬라이드"><img src="./images/main-slide2.jpeg" alt=""> <img src="./images/slide-txt2.jpeg" alt="" class="slide_txt"></a></div>
+              <div class="swiper-slide slide_img"><a href="#" title="메인슬라이드"><img src="./images/main-slide3.jpeg" alt=""> <img src="./images/slide-txt3.png" alt="" class="slide_txt"></a></div>
+              <div class="swiper-slide slide_img"><a href="#" title="메인슬라이드"><img src="./images/main-slide4.jpeg" alt=""> <img src="./images/slide-txt4.png" alt="" class="slide_txt"></a></div>
+              <div class="swiper-slide slide_img"><a href="#" title="메인슬라이드"><img src="./images/main-slide5.jpeg" alt=""> <img src="./images/slide-txt5.png" alt="" class="slide_txt"></a></div>
+              <div class="swiper-slide slide_img"><a href="#" title="메인슬라이드"><img src="./images/main-slide6.jpeg" alt=""> <img src="./images/slide-txt6.jpeg" alt="" class="slide_txt"></a></div>
+              <div class="swiper-slide slide_img"><a href="#" title="메인슬라이드"><img src="./images/main-slide7.jpeg" alt=""> <img src="./images/slide-txt7.jpeg" alt="" class="slide_txt"></a></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
+
+        <section class="quick">
+            <ul class="btn_a">
+                <li><input type="button" value="항공권 예약" class="q_tbtn btn1"> </li>
+                <li><input type="button" value="예약 조회" class="q_tbtn btn2"> </li>
+                <li><input type="button" value="체크인" class="q_tbtn btn3"> </li>
+                <li><input type="button" value="출도착 조회" class="q_tbtn btn4"> </li>
+                <li><input type="button" value="호텔/렌터카" class="q_tbtn btn5"> </li>
+            </ul>
+            <ul class="cla">
+                <li class="classic"><a href="javascript:void(0);">출발지</a></li>
+                <li class="classic"><a href="javascript:void(0);">도착지</a></li>
+                <li class="classic"><a href="javascript:void(0);">탑승일</a></li>
+                <li class="classic"><a href="javascript:void(0);">탑승객</a></li>
+                <li class="classic"><a href="javascript:void(0);">좌석등급</a></li>
+                <li class="open"><a href="javascript:void(0);">조회</a></li>
+                <li class="mile"> <a href="javascript:void(0);">마일리지 사용<input type="checkbox" id="milel"name="마일리지"></a></li>
+               
+            </ul>
+            <ul class="arpa">
+                <li class="arp1"><a href="javacript:void(0);" class="airp">왕복</a></li>
+                <li class="arp2"><a href="javacript:void(0);" class="airp">편도</a></li>
+                <li class="arp3"><a href="javacript:void(0);" class="airp">다구간</a></li>
+            </ul>   
+              
+        </section>
+        <section class="c_slide">
+            <h2>최저가 항공 조회</h2>
+            <p class="sub">오늘부터 6개월 내 출발하는 최저가와 출발일을 간편하게 조회하실 수 있습니다.</p>
+            <p class="sub2"><a href="javascript:void(0);"> 전체보기 +</a></p>
+        <div class="swiper c_Swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a href="javascript:void(0);"> <img src="./images/country_1.jpg" alt="방콕">
+                <span class="in_txt">
+                    <span class="country">서울 / 인천 <i class='fas fa-arrows-alt-h'></i> 방콕 </span>
+                    <br><span class="sub1"> 왕복</span> <br>
+                    <span class="price">KRW <span class="price_num">673,400</span> ~</span> 
+                </span></a></div>
+
+              <div class="swiper-slide"><a href="javascript:void(0);"> <img src="./images/country_2.jpg" alt="로마">
+                <span class="in_txt">
+                    <span class="country">서울 / 인천 <i class='fas fa-arrows-alt-h'></i> 로마 / 다빈치 </span>
+                    <br><span class="sub1"> 왕복</span> <br>
+                    <span class="price">KRW <span class="price_num">1,434,400</span> ~</span> 
+                </span></a></div>
+
+              <div class="swiper-slide"><a href="javascript:void(0);"><img src="./images/country_3.jpg" alt="프랑크푸르트">
+            <span class="in_txt">
+                    <span class="country">서울 / 인천 <i class='fas fa-arrows-alt-h'></i> 프랑크푸르트 </span>
+                    <br><span class="sub1"> 왕복</span> <br>
+                    <span class="price">KRW <span class="price_num">1,324,800</span> ~</span> 
+                </span></a></div>
+
+              <div class="swiper-slide"><a href="javascript:void(0);"><img src="./images/country_4.jpg" alt="하네다">
+            <span class="in_txt">
+                    <span class="country">서울 / 김포 <i class='fas fa-arrows-alt-h'></i> 도쿄 / 하네다 </span>
+                    <br><span class="sub1"> 왕복</span> <br>
+                    <span class="price">KRW <span class="price_num">612,800</span> ~</span> 
+                </span></a></div>
+
+              <div class="swiper-slide"><a href="javascript:void(0);"><img src="./images/country_5.jpg" alt="호놀롤루">
+            <span class="in_txt">
+                    <span class="country">서울 / 인천 <i class='fas fa-arrows-alt-h'></i> 호놀롤루 </span>
+                    <br><span class="sub1"> 왕복</span> <br>
+                    <span class="price">KRW <span class="price_num">1,223,000</span> ~</span> 
+                </span></a></div>
+
+              <div class="swiper-slide"><a href="javascript:void(0);"><img src="./images/country_6.jpg" alt="로스앤젤레스">
+            <span class="in_txt">
+                    <span class="country">서울 / 인천 <i class='fas fa-arrows-alt-h'></i> 로스앤젤레스 </span>
+                    <br><span class="sub1"> 왕복</span> <br>
+                    <span class="price">KRW <span class="price_num">1,603,400</span> ~</span> 
+                </span></a></div>
+
+              <div class="swiper-slide"><a href="javascript:void(0);"><img src="./images/country_7.jpg" alt="샌프란시스코">
+            <span class="in_txt">
+                    <span class="country">서울 / 인천 <i class='fas fa-arrows-alt-h'></i> 샌프란시스코 </span>
+                    <br><span class="sub1"> 왕복</span> <br>
+                    <span class="price">KRW <span class="price_num">1,553,400</span> ~</span> 
+                </span></a></div>
+
+              <div class="swiper-slide"><a href="javascript:void(0);"><img src="./images/country_8.jpg" alt="사이판">
+            <span class="in_txt">
+                    <span class="country">서울 / 인천 <i class='fas fa-arrows-alt-h'></i> 사이판 </span>
+                    <br><span class="sub1"> 왕복</span> <br>
+                    <span class="price">KRW <span class="price_num">403,200</span> ~</span> 
+                </span></a></div>
+
+              <div class="swiper-slide"><a href="javascript:void(0);"><img src="./images/country_9.jpg" alt="시드니">
+            <span class="in_txt">
+                    <span class="country">서울 / 인천 <i class='fas fa-arrows-alt-h'></i> 시드니 </span>
+                    <br><span class="sub1"> 왕복</span> <br>
+                    <span class="price">KRW <span class="price_num">1,530,300</span> ~</span> 
+                </span></a></div>
+
+              <div class="swiper-slide"><a href="javascript:void(0);"><img src="./images/country_10.jpg" alt="타이베이">
+            <span class="in_txt">
+                    <span class="country">서울 / 인천 <i class='fas fa-arrows-alt-h'></i> 타이베이[台北] </span>
+                    <br><span class="sub1"> 왕복</span> <br>
+                    <span class="price">KRW <span class="price_num">528,800</span> ~</span> 
+                </span></a></div>
+            </div>
+            
+          </div>
+          <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </section>
+
+        <section class="story">
+            <img src="./images/banner.jpeg" alt="">
+            <h2>아시아나 스토리</h2>
+            <p class="story_sub">아시아나의 일상을 사진으로 만나보세요</p>
+            <p class="story_sub2"><a href="javascript:void(0);">더보기</a></p>
+        </section>
+
+        <section class="event">
+            <h2>이벤트</h2>
+            <div class="event_sub"><img src="./images/event01.png" alt="이벤트1">
+            <span class="event_txt">
+                <p class="event_sub_info">고객참여</p>
+               <p class="event_sub_txt">온라인 신규회원 웰컴쿠폰 프로모션<br>　　　　　　　　</p>
+                <p class="event_sub_date">2022-02-15~ 2022-10-31</p>
+                <i class='fas fa-star'></i>  
+            </span></div>
+            <div class="event_sub"><img src="./images/event02.jpeg" alt="이벤트2">
+            <span class="event_txt">
+                <p class="event_sub_info_m">마일리지적립</p>
+                <p class="event_sub_txt">아시아나클럽 우수회원이 되어보세요<br>여행의 품격이 높아집니다.</p>
+                <p class="event_sub_date">2022-10-01~ 2022-11-30</p>
+                 <i class='fas fa-star'></i>  
+            </span></div>
+            <div class="event_sub"><img src="./images/event03.jpeg" alt="이벤트3">
+            <span class="event_txt">
+                <p class="event_sub_info">고객참여</p>
+                <p class="event_sub_txt">아시아나항공 이용하고 갤러리아백화점<br> 우수고객 혜택도 누리세요.</p>
+                <p class="event_sub_date">2022-08-12~ 2022-12-31</p>
+                 <i class='fas fa-star'></i>  
+            </span></div>
+        </section>
+
+        <section class="notice">
+            <div class="l_notice">
+            <h2>공지사항 <i class='fas fa-bullhorn'></i></h2>
+            <p class="notice_sub">아시아나항공의 새로운 소식을 알려드립니다.</p>
+            <p class="notice_sub2"><a href="javascript:void(0);"> 전체보기 +</a></p>
+            </div>
+            
+            <div class="r_notice">
+                <ul>
+                    <li><span class="notice_ico">공지</span><a href="javascript:void(0);"> 대한민국 입국 전 코로나19 음성 확인서 제출 중단 안내 (9월 3일부) <span class="date"> [2022-10-31]</span></a></li>
+                    <li><a href="javascript:void(0);"> 2022년 11월 한국출발 국제선 유류할증료 <span class="date"> [2022-10-31]</span></a></li>
+                    <li><a href="javascript:void(0);"> 온라인플랫폼 개인정보처리방침 변경 안내 <span class="date"> [2022-10-31]</span></a></li>
+                    <li><a href="javascript:void(0);"> 온라인플랫폼 개인정보처리방침 변경 안내 <span class="date"> [2022-10-31]</span></a></li>
+                    <li><a href="javascript:void(0);"> 온라인플랫폼 개인정보처리방침 변경 안내 <span class="date"> [2022-10-31]</span></a></li>
+                </ul>
+                
+            </div>
+        </section>
+
+        <section class="question">
+            <div class="question_title">
+                <h2>자주묻는 질문</h2>
+                <p>자주 질문해주시는 내용을 모아 보다 편리하게 궁금증을 알아볼 수 있습니다.</p> 
+            </div>
+            
+                <dl class="question_1">
+                    <dt><p class="q_txt"><span class="q_ico">Q</span>마일리지 사용몰 이용시 마일리지 비밀번호 등록은 어떻게 해야 하나요?<i class='fas fa-angle-down'></i></p></dt>
+                    <dd class="answer"> 
+                     
+                        마일리지 사용몰 이용 시 고객님의 개인정보 보호를 위하여 마일리지 비밀번호를 사용하고 있습니다.
+                        
+                        마일리지 비밀번호 등록을 아직 하지 않으신 고객님께서는<br> 로그인 후 "홈>마이 아시아나>회원정보>마일리지 비밀번호 등록/변경"에서 본인 인증 후에 마일리지 비밀번호 등록을 하실 수 있습니다.
+                        
+                        
+                    </dd>
+                    <dd class="answer_line"></dd>
+                    <dt><p class="q_txt"><span class="q_ico">Q</span>마일리지를 가족과 합산할수 있나요?<i class='fas fa-angle-down'></i></p></dt>
+                    <dd class="answer"> 
+                            마일리지 항공권 사용 시 부족한 마일리지 만큼 가족합산하여 이용하실 수 있습니다.
+                            등록 가능한 가족범위 내 총 8인까지 등록 가능하며, 마일리지 가족합산제도 신청서와 6개월이내 발급된 가족증빙서류를 아래의 방법으로 제출해주시기 바랍니다.
+                            ※ 등록 범위 : 가족대표회원의 배우자, 자녀, 부모, 친/외조부모, 친/외손자녀, 형제, 자매, 사위, 며느리, 배우자의 부모
+                           
+                            ※ 가족 마일리지 합산제도 신청서
+                            홈페이지 > 아시아나클럽 > 회원안내 > 가족합산 및 마일리지 양도 >
+                            신청서 다운로드
+                            ※ 가족관계 증빙서류
+                            가족관계증명서 또는 주민등록등본 : 6개월이내 발급 서류
+                          
+                            ※ 등록방법 
+                            1) 홈페이지  로그인 후 마이 아시아나 > 가족회원관리에서 파일 업로드
+                          
+                            2) 팩스 접수 : 02-2669-4275/4276
+                       
+                    </dd>
+                    <dd class="answer_line"></dd>
+                    <dt><p class="q_txt"><span class="q_ico">Q</span>마일리지 항공권은 어떻게 발급 받나요?<i class='fas fa-angle-down'></i></p></dt>
+                    <dd class="answer"> 
+                                             
+                            아시아나항공 홈페이지(http://flyasiana.com) 또는 예약영업센터를 통해 예약하실 수 있습니다. <br> 예약영업센터에서 예약 하시는 경우 반드시 마일리지 여행임을 말씀해 주시기 바라며, <br>안내 받으신 마일리지 항공권 발권 시한(Ticket Time Limit)까지 <br>아시아나항공 홈페이지 및 모바일을 통해 발급 가능합니다.  
+                     
+                    </dd>
+                    <dd class="answer_line"></dd>
+
+                   </dl> 
+
+                   <div class="another">
+                    <ul>
+                        <li class="a_sub">찾는 질문이 없으시다면?</li>
+                        <li class="another_btn">더보기</li>
+                        <li class="another_btn">문의하기</li>
+                    </ul>
+                   </div>
+        </section>
+        
+        <section class="covid">
+            <h2>코로나19 종합 안내 센터</h2>
+            <a href="javascript:void(0);"><img src="./images/covid.jpeg" alt="코로나19 종합 안내 센터"></a>
+        </section>
+
+
+        <section class="service">
+            <div class="ser_sub">
+            <h2>제휴 서비스 안내</h2>
+            <p>아시아나 항공의 다양한 제휴상품 이용하시고 편안한 여행하세요</p>
+            </div>
+            <ul class="ser_box">
+                <li class="box hotel">
+                    <a href="javascript:void(0);">
+                    <ul>
+                        <li><img src="./images/hotel.png" alt="호텔 아이콘"></li>
+                        <li class="ser_title">호텔</li>
+                        <li class="ser_sub2">더빠르고 스마트한 숙박예약<br>AGODA</li>
+                    </ul>
+                    </a>
+                </li>
+                <li class="box insurance">
+                    <a href="javascript:void(0);">
+                    <ul>
+                        <li><img src="./images/service.png" alt="여행자보험 아이콘"></li>
+                        <li class="ser_title">여행자 보험</li>
+                        <li class="ser_sub2">해외여행의 필수품<br>메리츠여행자보험</li>
+                    </ul>
+                    </a>
+                </li>
+                <li class="box rental">
+                    <a href="javascript:void(0);">
+                    <ul>
+                        <li><img src="./images/car.png" alt="렌터카 아이콘"></li>
+                        <li class="ser_title">렌터카</li>
+                        <li class="ser_sub2">전세계 렌터카<br>
+                            Rentalcars.com</li>
+                    </ul>
+                    </a>
+                </li>
+                <li class="box discount">
+                    <a href="javascript:void(0);">
+                    <ul>
+                        <li><img src="./images/coupon.png" alt="투어&액티비티 아이콘"></li>
+                        <li class="ser_title">투어&액티비티</li>
+                        <li class="ser_sub2">아시아나항공에서 항공권 예약시<br>
+                            마이리얼트립 최대 10% 할인!</li>
+                    </ul>
+                    </a>
+                </li>
+                <li class="box mileage">
+                    <a href="javascript:void(0);">
+                    <ul>
+                        <li><img src="./images/coupon.png" alt="마일리지 아이콘"></li>
+                        <li class="ser_title">마일리지 적립</li>
+                        <li class="ser_sub2">제휴 신용카드 사용하고,<br>
+                            마일리지 적립하고!</li>
+                    </ul>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- 푸터영역 -->
+    <footer>
+        <ul class="f_subk">
+            <li>규정 및 약관
+                <ul class="f_sub">
+                    <li class="f_sub2"><a href="javascript:void(0);"> 개인정보처리방침</a><img src="./images/ISMS.png" alt=""></li>
+                    <li class="f_sub2"><a href="javascript:void(0);"> 이용약관</a></li>
+                    <li class="f_sub2"><a href="javascript:void(0);"> 운송 약관 및 고지사항</a></li>
+                    <li class="f_sub2"><a href="javascript:void(0);"> 아시아나클럽 규정</a></li>
+                </ul>
+            </li>
+
+            <li>
+                기타 안내
+                <ul class="f_sub1">
+                    <li class="f_sub3"><a href="javascript:void(0);"> 항공교통이용자 서비스 계획</a></li>
+                    <li class="f_sub3"><a href="javascript:void(0);"> 피해 구제 계획</a></li>
+                    <li class="f_sub3"><a href="javascript:void(0);"> 소비자 안전정보 안내</a></li>
+                    <li class="f_sub3"><a href="javascript:void(0);"> 유료 부가서비스</a></li>
+                    <li class="f_sub3"><a href="javascript:void(0);"> 사이트 맵</a></li>
+                    <li class="f_sub3"><a href="javascript:void(0);"> 광고 안내</a></li>
+                </ul>
+            </li>
+            <li>
+                회사소개
+                <ul class="f_sub1">
+                    <li class="f_sub3"><a href="javascript:void(0);"> 아시아나항공 소개</a></li>
+                    <li class="f_sub3"><a href="javascript:void(0);"> ESG 경영</a></li>
+                    <li class="f_sub3"><a href="javascript:void(0);"> 홍보채널</a></li>
+                    <li class="f_sub3"><a href="javascript:void(0);"> 제휴 항공사</a></li>
+                    <li class="f_sub3"><a href="javascript:void(0);"> 사회공헌</a></li>
+                    <li class="f_sub3"><a href="javascript:void(0);"> IR</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <address>
+            아시아나항공㈜ 대표이사 정성권사업자등록번호 104-81-17480통신판매업 신고 제 16-2822<br>
+            서울특별시 강서구 오정로 443-83예약 1588-8000 / 02-2669-8000아시아나클럽 1588-8180 / 02-2669-8180<br>
+            개인정보보호책임자 온라인마케팅 담당 직무대행 이승환서버 위치 : 아시아나IDT㈜ 전산센터<br>
+            © ASIANA AIRLINES. All rights reserved.
+        </address>
+        <ul class="f_ico">
+            <li><a href="javascript:void(0);"><img src="./images/footer_logo1.png" alt=""></a></li>
+            <li><a href="javascript:void(0);"><img src="./images/footer_logo.png" alt=""></a></li>
+            <li class="f_ico1"><a href="javascript:void(0);"><img src="./images/footer_logo3.png" alt=""></a></li>
+            </ul>
+
+            <ul class="qr">
+               <li><img src="./images/qr.PNG" alt="qr코드"></li>
+
+            </ul>
+            <ul class="sns">
+                <li><a href="javascript:void(0);"> <i class='fab fa-instagram'></a></i></li>
+                <li><a href="javascript:void(0);"> <i class='fab fa-facebook'></a></i></li>
+                <li><a href="javascript:void(0);"> <i class='fab fa-youtube'></a></i></li>
+                <li><a href="javascript:void(0);"> <i class='fab fa-twitter'></a></i></li>
+            </ul>
+
+    </footer>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          autoplay:{
+            delay:3000,
+            disableOnlnteraction:false,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+        
+      var swiper = new Swiper(".c_Swiper", {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        loop: true,
+        centeredSlides: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          
+      });
+
+      
+        
+      </script>
+    
+</body>
+</html>
